@@ -1,10 +1,10 @@
 @font-face {
-  font-family: montserrat;
+  font-family: 'montserrat';
   src: url(Fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: kage;
-  src: url(Fonts/KAGE_DEMO_FONT-Black.otf);
+  font-family: 'lemonmilk';
+  src: url(Fonts/LEMONMILK-Regular.otf);
 }
 * {
   margin: 0;
@@ -12,12 +12,13 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #FFCD86;
-  color: white;
-  font-family: montserrat, sans-serif;
+  background-color: white;
+  color: black;
+  font-family: 'quicksand', sans-serif;
   padding: 20px;
 }
 nav{
+  font-family: 'lemonmilk', sans-serif;
   display: block;
   text-align: center;
   letter-spacing: 2px;
@@ -31,12 +32,18 @@ nav a{
   position: relative;
   top: 0;
   transition: top ease 0.5s;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  letter-spacing: 5px;
 }
 
 #welcome {
-  color: #f48a72;
-  background-color: #FFCD86;
-  font-family:  kage, serif;
+  color: #f7a28a;
+  background-color: white;
+  font-family:  'lemonmilk', sans-serif;
   font-size: 50px;
   position: relative;
   padding-right: 20px;
@@ -46,42 +53,57 @@ nav a{
 
 h1 {
   color: #f48a72;
-  background-color: #FFCD86;
-  font-family: kage, serif;
+  background-color: white;
+  font-family: 'lemonmilk', serif;
   font-size: 60px;
   position: relative;
 }
 
 h2 {
-  font-family: kage, sans-serif;
-  color: white;
+  font-family: 'quicksand', serif;
+  color: black;
   font-size: 30px;
   margin: 20px;
 }
 
 h3{
+  font-family: 'lemonmilk';
+  font-size: 30px;
   margin: 20px;
   font-weight: bolder;
+  letter-spacing: 2px;
 }
-
+h4 {
+  margin: 10px 30px;
+  font-weight: bold;
+}
 p{
-  color: #ffffff;
+  color: black;
   font-size: 14px;
   margin: 20px;
 }
 
 a{
-  color: #f48a72;
+  color: #f7a28a;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:hover {
-color: #ffebeb;
+  color: #f5c45b;
   top: -5px;
+}
+
+a:active {
+  color: #fbeae2;
 }
 
 ul li{
   list-style: none;
+  margin: 10px 40px;
+  line-height: 0.5;
+  font-size: 14px;
+  display: inline;
 }
 
 #profilepic {
@@ -95,3 +117,5 @@ footer {
   text-align: center;
   bottom: 0;
 }
+
+
