@@ -19,8 +19,10 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
+
+  <script src="https://kit.fontawesome.com/8fc2b9a756.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,12 +33,13 @@
 
        <a href="index.html">Home</a>
   <a href="#about">About</a>
-  <a href="">Resume</a>
-  <a href="">Portfolio</a>
+  <a href="#resume">Resume</a>
+  <a href="#portfolio">Portfolio</a>
+    <a href="">Blog</a>
   <a href="#contact">Contact</a>
 
   </nav>
-  <h1 id='welcome'>Hello! My name is
+  <h1 id='welcome'>Hey, my name is
      <br>Marie Collinge.</h1>
     <img id="profilepic" src="img/York 2018.jpg" width="300px" height="300px"/>
     <h2>Welcome to my portfolio site.</h2>
@@ -44,16 +47,32 @@
 
   <main>
     <section id="about">
-      <h3>About Me</h3>
-    <p>I am learning how to code with <a href="https://www.codecademy.com" target="_blank">Codecademy</a>.</p>
-    </section>
+      <h3>About</h3>
+    <p>I am learning how to code with <a href="https://www.codecademy.com" target="_blank" title="Codecademy is an e-learning platform.">Codecademy</a>.</p>
+      <p>I am following the <strong>Full Stack Developer</strong> career path.</p>
+      <h4>Tech Stack:</h4>
+      <ul class="techstack">
+        <li><i class="fa-solid fa-code"></i> HTML</li>
+        <li><i class="fa-solid fa-code"></i> CSS</li>
+        <li><i class="fa-solid fa-code"></i> JavaScript</li>
+      </ul></section>
     <section id="resume">
       <h3>Resume</h3>
-      <p>I am learning how to code with <a href="https://www.codecademy.com" target="_blank">Codecademy</a>.</p>
+      <p>Where I've worked.</p>
+    </section>
+    <section id="portfolio">
+      <h3>Portfolio</h3>
+      <p>Some of the projects I have been working on.</p>
     </section>
     <section id="contact">
       <h3>Contact</h3>
-    <p>I would love to hear from you! <a href="mailto:marielouisecollinge@gmail.com">Email me</a>.</p>
+    <p>I would love to hear from you!</p>
+      <p class="socials">
+        <a href="mailto:marielouisecollinge@gmail.com" title="Email me"><i class="fa-solid fa-at"></i></a>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <a href="marizzleco.github.io" title="github"><i class="fa-brands fa-github"></i></a>
+      </p>
     </section>
   </main>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
