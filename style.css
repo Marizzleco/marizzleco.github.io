@@ -16,17 +16,21 @@ body {
   color: black;
   font-family: 'quicksand', sans-serif;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 nav{
   font-family: 'lemonmilk', sans-serif;
-  display: block;
+  display: flex;
+  align-items: baseline;
   text-align: center;
+  justify-content: center;
   letter-spacing: 2px;
   padding: 10px 5px;
   margin: 20px;
-width: 100%
+  width: 100%;
+  flex-wrap: wrap;
 }
-
 nav a{
   margin: 20px;
   position: relative;
@@ -35,20 +39,26 @@ nav a{
   text-transform: uppercase;
   font-size: 15px;
 }
-
 nav a:hover {
   letter-spacing: 5px;
 }
-
-#welcome {
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#title {
   color: #f7a28a;
   background-color: white;
   font-family:  'lemonmilk', sans-serif;
   font-size: 50px;
-  position: relative;
-  padding-right: 20px;
-  display: inline-block;
   margin: 20px;
+  max-width: 500px;
+}
+#profilepic {
+  border: solid #ffebeb thick;
+  border-radius: 50%;
 }
 
 h1 {
@@ -56,18 +66,15 @@ h1 {
   background-color: white;
   font-family: 'lemonmilk', serif;
   font-size: 60px;
-  position: relative;
 }
-
 h2 {
   font-family: 'quicksand', serif;
   color: black;
   font-size: 30px;
   margin: 20px;
 }
-
 h3{
-  font-family: 'lemonmilk';
+  font-family: 'lemonmilk', sans-serif;
   font-size: 30px;
   margin: 20px;
   font-weight: bolder;
@@ -82,35 +89,63 @@ p{
   font-size: 14px;
   margin: 20px;
 }
-
 a{
   color: #f7a28a;
   text-decoration: none;
   text-transform: uppercase;
 }
-
 a:hover {
   color: #f5c45b;
   top: -5px;
 }
-
 a:active {
   color: #fbeae2;
 }
-
 ul li{
   list-style: none;
   margin: 10px 40px;
   line-height: 0.5;
   font-size: 14px;
-  display: inline;
+  display: inline-flex;
+  align-items: baseline;
 }
 
-#profilepic {
-  border: solid #ffebeb thick;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
+i {
+  margin: 10px;
+}
+
+.main {
+  display: inline-flex;
+  justify-items: flex-start;
+  justify-content: space-around;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+ flex-grow: 1;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+flex-grow: 2;
+}
+
+.techstack li {
+
+}
+
+.blog {
+  display: flex;
+  flex-grow: 1;
+  background-image: linear-gradient(to top, #f5c45b, #f5c45b);
+  border-radius: 10px;
+  min-width: 200px;
+}
+.blog h3 {
 
 }
 footer {
